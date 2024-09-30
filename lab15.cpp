@@ -12,16 +12,21 @@ class Movie{
     int yearReleased;
     string screenWriter, title;
     public:
+    // Constructor with parameters
     Movie(string screenWriter, int yearReleased, string title)
         :screenWriter(screenWriter), yearReleased(yearReleased), title(title){}
-    //Setter and getter
+        
+    //Setters
     void setYearReleased(int yearReleased){this->yearReleased = yearReleased;}
     void setScreenWriter(string screenWriter){this->screenWriter = screenWriter;}
     void setTitle(string title){this->title = title;}
+
+    //Getters
     int getYearReleased()const{return yearReleased;}
     string getScreenWriter()const{return screenWriter;}
     string getTitle()const{return title;}
 
+    // Print method
     void print()const{
         cout<<"Movie: "<<title<<endl;
         cout<<"    Year released: "<<yearReleased<<endl;
